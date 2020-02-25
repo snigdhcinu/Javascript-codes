@@ -1,0 +1,11 @@
+const s = [2, 4, 6];
+function mutableConst() {
+  // 'use strict';
+
+  // s = [8, 9, 10]; invalid
+// But following line is not.
+s[0]=8;
+s[1]=9;
+s[2]=10;
+}
+mutableConst();
