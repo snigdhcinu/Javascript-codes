@@ -1,0 +1,8 @@
+const obj={
+a:2,b:4,c:6
+};
+Object.freeze(obj);
+obj.a=1;// Will be ignored, mutation not allowed.
+obj.b=54;//Will be ignored, mutation not allowed.
+console.log(obj.a); // 2
+console.log(obj.b); // 6
