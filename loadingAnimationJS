@@ -1,0 +1,76 @@
+<!--In this project, we will use js animation to create a loading animation. -->
+<!-- The output is not as expected.-->
+<!--Update ideas, try to make it as close to original as possible.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Loading</title>
+</head>
+<body>
+	<div id="container">
+		<div id="box"></div> <!--IN this DOM, container is the parent of the box.-->
+	</div>
+
+</body>
+<style >
+	#container{
+		width:500px;
+		height: 25px;
+		background: blue;
+		position:relative;
+		left: 500px;
+		top: 250px;
+	}
+	#box{
+		width: 25px;
+		height: 25px;
+		background: red;
+		position:absolute;
+	}
+</style>
+<script>
+	var box=document.getElementById("box");
+	var pos=0;
+	var t=setInterval(move,5);//Timer created with interval of 500mS.
+	function move()//responsible for the movement of the box.
+		{
+			if(pos>=475)
+			{
+				//setInterval(moveBack,5);
+				//clearInterval(t);//Implies to stop the timer.
+				pos=0;
+				//return 0;
+				/*while(pos>=0)
+				{
+					//pos-=1;
+					box.style.left=pos+'px';
+					pos-=1;
+				}
+				*/
+				
+			}
+			pos+=1;
+			box.style.left=pos+'px';
+		}
+		//pos=475;
+	/* This module is working perfectly fine.
+	var t2=setInterval(moveBack,5);//Timer to move back in the bar.
+	function moveBack()
+		{
+			if(pos<=0)
+			{
+				//setInterval(move,5);
+				clearInterval(t2);
+			}			
+			pos-=1;
+			box.style.left=pos+'px';
+
+		}
+		
+	*/	
+
+</script>
+</html>
+
+
+<!-- Reference:-https://johnresig.com/blog/how-javascript-timers-work/-->
