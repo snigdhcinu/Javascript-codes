@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Execution time calculation</title>
+</head>
+<body>
+	<script>
+		const startTimer=performance.now();
+		let i=0;
+		while(i<=1024)
+			i++;
+		alert(`The value of i is ${i}`);
+		const endTimer=performance.now();
+		console.log(`The function execution took ${endTimer-startTimer} mS to complete`);
+	</script>
+
+</body>
+</html>
