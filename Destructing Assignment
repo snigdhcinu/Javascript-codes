@@ -1,0 +1,10 @@
+const File = {
+  a: { i: 22, j: 44 },
+  b: { i: 33, j: 66 },
+  c: { i: 44, j: 88 }
+};
+  
+const {b:{i:ib,j:jb}}=File;
+
+console.log(ib); // should be 33
+console.log(jb); // should be 66
