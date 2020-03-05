@@ -1,1 +1,12 @@
-
+// Below logic limited to js.
+let a = 8, b = 6;
+[a,b]=[b,a];
+console.log(a); // should be 6
+console.log(b); // should be 8
+                                  // Method 2.
+/* A more general approach
+let a=8,b=6;
+a=a+b;
+b=a-b; //b=(a+b)-b => b=a
+a=a-b; //a=(a+b)-a => a=b
+*/
