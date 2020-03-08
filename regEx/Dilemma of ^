@@ -1,0 +1,8 @@
+let string="This is, a sentence";
+let string2="Cinu is a very very good boy";
+let regEx1=/[^aeiou]/gi;//Exclude all vowels.
+let regEx2=/^[Cinu]/ig;//we could exclude the [] also, but for better understanding.
+let arr1=string.match(regEx1);
+console.log(arr1);// returns all the non-vowels in the string.
+let arr2=string2.test(regEx2);
+console.log(arr2);//returns true
