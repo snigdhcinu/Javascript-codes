@@ -1,0 +1,7 @@
+// let this be a crowd gathering, and the criminals are denoted by C, whereas the remaining represents common people.
+let crowd = 'P1P2P3P4P5P6CCCP7P8P9';
+
+let reCriminals = /C+/; // Change this line
+
+let matchedCriminals = crowd.match(reCriminals);
+console.log(matchedCriminals);
