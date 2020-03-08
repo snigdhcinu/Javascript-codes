@@ -1,0 +1,11 @@
+var user= prompt("Enter a Username");
+let userCheck = /^[a-z]([0-9][0-9]+|[a-z]+\d*)$/i; // The logic line.
+let result = userCheck.test(user);
+if(result)
+{
+let choice=confirm("You sure for this username??");
+if(!choice)
+prompt("Re-Enter a Username");
+}
+else
+alert("Username invalid");
