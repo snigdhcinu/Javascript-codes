@@ -1,0 +1,2 @@
+var x=eval(100*56+78-55);
+document.write(x);
