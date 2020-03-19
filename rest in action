@@ -1,0 +1,17 @@
+<script>
+
+ function howMany(...args)
+
+   {
+
+   return args.length;
+
+   }
+
+  console.log(howMany(0,1,2));//3
+
+  console.log(howMany("Hi",null,[1,2,3],{});//4
+
+
+
+</script>
