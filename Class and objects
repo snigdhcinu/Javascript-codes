@@ -1,0 +1,9 @@
+class Rectangle{
+constructor(width, height){
+this.width=width;
+this.height=height;
+console.log(eval(2*(lenth+width)));
+}
+}
+var square=new rectangle(10,10);
+var rect=new rectangle(43,65);
