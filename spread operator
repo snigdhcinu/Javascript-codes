@@ -1,0 +1,5 @@
+// Add items at th emiddle of an array.
+
+let newArr=['Three','Four'];
+let arr=['one','two',...newArr,'five'];
+console.log(arr);// one two Three Four five
