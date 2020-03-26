@@ -1,0 +1,21 @@
+class Bood
+{
+  constructor(author)
+  {
+  this.author=author;
+  }
+ //getter
+  get writer()
+  {
+  return this.author;
+  }
+ //setter
+  set writer(new Name)
+  {
+    this.author=new Name;
+  }
+}
+const lol=new Book('Jiren');
+console.log(lol.writer);//Jiren
+lol.writer="Goku";
+console.log(lol.writer);//Goku
