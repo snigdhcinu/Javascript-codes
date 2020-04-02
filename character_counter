@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>letter-counter</title>
+</head>
+<body>
+<div id="content" style="position: relative;top: 300px;left: 39%;width: 400px;height: 100px">
+	<input id="inp" type="text" name="counter" onchange="change()"  placeholder="Enter the text here." style="width: 300px;height: 30%;font-size: 1.5rem;" >
+	<p id="result">The number of characters are :- </p>
+</div>
+	<script>
+		
+		function change()
+		{
+			let x=document.getElementById("inp");
+			let node=document.createTextNode(x.value.length)
+			let ele=document.getElementById("result");
+			ele.appendChild(node);
+		}
+		
+	</script>
+</body>
+</html>
