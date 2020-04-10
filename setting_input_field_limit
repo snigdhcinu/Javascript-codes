@@ -1,0 +1,4 @@
+// Set the word limit.
+var text= prompt("Enter the text");
+var text_data=text.slice(0,limit);
+alert(text_data);
