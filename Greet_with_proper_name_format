@@ -1,0 +1,14 @@
+//Ask the user for his name.
+var user=prompt("Enter your name.");
+//Extract the first character, that should be capital letter.
+var firstChar=user.slice(0,1);
+//Extract the remaining characters, that should be small letter.
+var remChar=user.slice(1,user.length);
+//Convert the first letter to capital alphabets.
+firstChar=firstChar.toUpperCase();
+//Convert the remaining letters to small alphabets.
+remChar=remChar.toLowerCase();
+//Setting the proper format of the username.
+user=firstChar+remChar;
+//Greeting the user with proper respect.
+alert("Hello "+user+" !");
