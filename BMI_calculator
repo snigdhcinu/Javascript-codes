@@ -1,0 +1,9 @@
+function main()
+{
+  //weight in kgs, height in meters.
+  var value=bmiCalculator(80,1.5);
+}
+function bmiCalculator(weight,height){
+var BMI=weight/(height*height);
+return BMI;
+}
