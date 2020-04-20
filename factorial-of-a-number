@@ -1,0 +1,28 @@
+function factorialize(num) {
+   
+      // ITERATIVE SOLUTION .
+   
+  // if(num===0||num===1)
+  //   return 1;
+  // else
+  //   {
+  //     let product=1
+  //    for(let i=1;i<=num;i++)
+  //     {
+  //       product*=i;
+  //     }
+  //     num=product;
+  //   }
+  // return num;
+  
+      // RECURSIVE SOLUTION .
+    
+  if(num===0||num===1)
+    return 1;
+  else
+    {
+      return (num*factorialize(num-1))
+    } 
+}
+
+factorialize(5);
