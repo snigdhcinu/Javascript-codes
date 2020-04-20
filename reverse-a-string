@@ -1,0 +1,17 @@
+function reverseString(str) {
+let arr=new Array();
+  //Store the value of reversed elements in an array. Other method to reverse, a more generic one would be arr[i]=str[(str.length-1)-i]
+  // where 0 <= i < str.length
+for(let i=0;i<str.length;i++)
+  {
+    arr.unshift(str[i]);
+  }
+var arr2=new Array();
+  // Converting the array to string, without any comma seperation .
+for(let i=0;i<arr.length;i++)
+  {
+    arr2+=arr[i];
+  }
+  return arr2;
+}
+reverseString("hello");
