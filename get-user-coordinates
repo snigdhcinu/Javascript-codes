@@ -1,0 +1,10 @@
+/* The theory behind this is that every browser has a navigator. The pop-up appears requesting for access to share location 
+with a site, is the doing of browser navigation.*/
+
+if(navigator.geolocation)  // We make sure that navigator.geolocation object exists.
+  {
+    navigator.geolocation.getCurrentPosition(function(position){
+      let latitude=position.coords.latitude;  // Accessing the position object's coords's latitude value
+      let longitude=position.coords.longitude;  // Accessing the position object's coords's longitude value
+    });
+  }
