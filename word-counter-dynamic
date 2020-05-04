@@ -1,0 +1,7 @@
+/*
+    text box.val()
+    a.length=word count
+evaluated with onchange event, form event 
+See jQuery for ideas.
+
+*/
