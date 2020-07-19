@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Autocomplete</title>
+    <!-- Included some basic styling, change at will -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/prampcontent/3ea04cbd0f61a798e96afbe5d31ec2f9/raw/e879e32222b543b29a168daa089e2f9f28cf9eb2/autocomplete.css">
+</head>
+<body>
+<form class="search-form">
+    <input type="text" id='query' list='names' class="search-input" onkeydown='suggestion()' placeholder="Start typing a movie title..." autocomplete='off'>
+  <datalist id='names'>
+    <option value='' id='item-1'>
+    <option value='' id='item-2'>      
+    <option value='' id='item-3'>
+    <option value='' id='item-4'>
+    <option value='' id='item-5'>
+    <option value='' id='item-6'>
+    <option value='' id='item-7'>
+    <option value='' id='item-8'>
+  </datalist>
+    <ul class="results"></ul>
+</form>
+<!-- Helper code to provide a search API for mock data -->
+<script src="https://cdn.rawgit.com/prampcontent/180077452f9279073cab1035f60d30cf/raw/9cbf891a80bad9ad09c6261ef9578a65502922cc/search_helper.js"></script>
+<script>
+  function suggestion(){
+  let query=document.getElementById('query').value;
+    console.log(query);
+  searchData(query).then(result=>{
+    console.log(result);
+            document.getElementById('item-1').value=result[1].title;
+            document.getElementById('item-2').value=result[2].title;
+            document.getElementById('item-3').value=result[3].title;
+            document.getElementById('item-4').value=result[4].title;
+            document.getElementById('item-5').value=result[5].title;
+            document.getElementById('item-6').value=result[6].title;
+            document.getElementById('item-7').value=result[7].title;
+            document.getElementById('item-8').value=result[8].title;
+  }).catch(err=>{
+    console.log(err);
+  });
+  }
+</script>
+</body>
+</html>
